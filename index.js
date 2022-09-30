@@ -16,7 +16,7 @@ const fakedb = window.localStorage
 // Area de funciones
 const guardarcontacto = (db,data) =>{
     db.setItem(data.id, JSON.stringify(data))
-    window.location.href = '/test/'
+    window.location.href = 'https://betrox78.github.io/test/'
 }
 
 const crearcardcontacto = (parent, contacto , db) =>{
@@ -56,7 +56,7 @@ const crearcardcontacto = (parent, contacto , db) =>{
     btneliminar.onclick = (event) => {
         event.preventDefault()
         db.removeItem(btneliminar.value)
-        window.location.href = '/test/'
+        window.location.href = 'https://betrox78.github.io/test/'
     }
 }
 const cargarcontactos = (db, parent) => {
